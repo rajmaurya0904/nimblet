@@ -1,4 +1,8 @@
 [project]
+
+[project.scripts]
+nimblet-monitor = "nimblet.cli:main"
+
 name = "nimblet"
 version = "0.1.0"
 description = "A background agent that monitors clipboard content and suggests context‑aware snippets or code completions, filling the niche of proactive clipboard assistants."
