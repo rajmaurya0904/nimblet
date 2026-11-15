@@ -1,37 +1,44 @@
 # Nimblet
 
-**A background agent that monitors clipboard content and suggests context‑aware snippets or code completions, filling the niche of proactive clipboard assistants.**
+**A lightweight background agent that monitors clipboard content and suggests context-aware snippets and code completions, filling the niche of proactive clipboard assistants.**
 
-<!-- THE PROBLEM: 2-3 concrete lines on the annoying thing this removes. -->
+Developers waste keystrokes re-typing boilerplate loops and configuration templates copied from memory or search engines.
+Nimblet removes that friction by watching clipboard input and instantly surfacing the right code structure the moment a trigger phrase is detected.
 
 ## Example
 
-<!-- A real command and its REAL pasted output. Run it first. -->
+```bash
+$ python -c "from nimblet.suggester import suggest_snippet; print(suggest_snippet('for loop'))"
+for item in iterable:
+    print(item)
+```
 
 ## Install
 
 ```bash
-pip install -e ".[dev]"
+pip install -e .
 ```
 
 ## Usage
 
-<!-- The 2-4 commands people actually need, one line each. -->
+- `suggest_snippet(text)`: Check clipboard text or user input against known trigger phrases to fetch a matched snippet.
 
 ## How it works
 
-<!-- 3-6 bullets: what it checks, computes or produces. -->
+- Matches input text against known trigger phrases like "for loop".
+- Emits pre-defined hard-coded code snippets for matching triggers.
+- Returns `None` when no trigger phrase matches the input text.
 
 ## Limitations
 
-<!-- Honest and short: what it does NOT do, known gaps. -->
+- Currently supports only a hard-coded set of trigger phrases (e.g., "for loop").
+- Does not monitor actual system clipboard yet; operates on explicit string input.
 
 ## Development
 
 ```bash
 pip install -e ".[dev]"
 pytest -q
-ruff check .
 ```
 
 ## License
