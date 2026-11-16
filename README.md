@@ -1,9 +1,8 @@
 # Nimblet
 
-**A lightweight background agent that monitors clipboard content and suggests context-aware snippets and code completions, filling the niche of proactive clipboard assistants.**
+Nimblet is a lightweight background agent that monitors clipboard content and suggests context-aware snippets and code completions.
 
-Developers waste keystrokes re-typing boilerplate loops and configuration templates copied from memory or search engines.
-Nimblet removes that friction by watching clipboard input and instantly surfacing the right code structure the moment a trigger phrase is detected.
+Nimblet addresses the problem where developers waste keystrokes re‑typing boilerplate loops and configuration templates copied from memory or search engines, lacking proactive clipboard assistance by not automatically surfacing relevant snippets when needed, forcing manual lookup and copy‑paste.
 
 ## Example
 
